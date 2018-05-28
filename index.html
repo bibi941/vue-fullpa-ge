@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>fullpage</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+
+  html::-webkit-scrollbar {
+    width: 0px
+  }
+</style>
+
+<body>
+  <div id="app">
+
+    <Fullpage :pages="5" :bg-color="bgColor">
+      <template scope="ddd" slot="slot3">
+        <Page1 :state="ddd.state"></Page1>
+      </template>
+    </Fullpage>
+
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
