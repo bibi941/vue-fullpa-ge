@@ -1,4 +1,4 @@
-# demo
+# 基于Vue的FullPage
 
 > A Vue.js project
 
